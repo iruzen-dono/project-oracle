@@ -4,6 +4,31 @@ All notable changes to this project are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.4] — 2026-11-27
+
+The PyPI summary sold the tool by its mechanism instead of its result, and the
+repository pointed every visitor at a page that says the project is dead.
+
+**The summary.** It read *"Audits and generates the context file a coding agent
+reads. Tells you which rules the repo backs, which it contradicts, and which
+cannot be checked."* — accurate, and it describes the internals first. It now
+leads with the object and the verb: *"Checks the AGENTS.md a coding agent
+trusts against the repository — which rules it backs, which it contradicts,
+which nobody can verify — and generates it when missing."*
+
+**The link.** The repository's `homepage` pointed at
+`pypi.org/project/hermes-project-oracle`, a page that opens with *"Renamed to
+project-oracle"* and carries `Development Status :: 7 - Inactive`. The only
+link above the fold sent people to something that reads abandoned. It now
+points at this package.
+
+Also in this release, outside the package: the repository gained a social
+preview card (until now every shared link rendered GitHub's generated one) and
+Discussions. Neither changes the wheel.
+
+**No runtime code changed.** The version exists so PyPI's frozen copy of the
+summary and the description can move.
+
 ## [3.0.3] — 2026-11-17
 
 The PyPI page was the last surface still carrying claims the code could not back.
