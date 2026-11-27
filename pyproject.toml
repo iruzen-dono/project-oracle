@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "project-oracle"
 dynamic = ["version"]
-description = "Audits and generates the context file a coding agent reads. Tells you which rules the repo backs, which it contradicts, and which cannot be checked."
+description = "Checks the AGENTS.md a coding agent trusts against the repository — which rules it backs, which it contradicts, which nobody can verify — and generates it when missing."
 readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"

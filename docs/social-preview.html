@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1280px; height:640px; }
+  body {
+    background:#0E1116;
+    color:#F2F4F7;
+    font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif;
+    padding:64px 72px;
+    display:flex; flex-direction:column; justify-content:space-between;
+    position:relative;
+  }
+  .rule { position:absolute; left:72px; top:0; width:6px; height:640px; background:#F0A030; }
+  .kicker {
+    font-family:Consolas,"Cascadia Mono",monospace;
+    font-size:19px; letter-spacing:.22em; text-transform:uppercase;
+    color:#F0A030;
+  }
+  h1 {
+    font-size:60px; line-height:1.12; font-weight:700; letter-spacing:-.02em;
+    max-width:1080px; margin-top:26px;
+  }
+  h1 .bad { color:#FF6B6B; font-size:46px; display:block; margin-top:14px; }
+  h1 code {
+    font-family:Consolas,"Cascadia Mono",monospace;
+    font-size:52px; background:#1B2028; color:#F2F4F7;
+    padding:2px 14px; border-radius:4px;
+  }
+  .sub { font-size:31px; line-height:1.35; color:#A9B2BF; margin-top:26px; max-width:1000px; }
+  .foot { display:flex; justify-content:space-between; align-items:flex-end;
+          border-top:1px solid #262D38; padding-top:26px; }
+  .foot .name { font-size:27px; font-weight:700; letter-spacing:.01em; }
+  .foot .name span { color:#F0A030; }
+  .foot .cmd {
+    font-family:Consolas,"Cascadia Mono",monospace; font-size:22px;
+    color:#A9B2BF; background:#161B22; border:1px solid #262D38;
+    padding:10px 18px; border-radius:4px;
+  }
+</style>
+</head>
+<body>
+  <div class="rule"></div>
+  <div>
+    <div class="kicker">audit — context file</div>
+    <h1>Your <code>AGENTS.md</code> says <code>npm run test</code>.<br>
+        <span class="bad">The repo deleted that script six months ago.</span></h1>
+    <div class="sub">Project Oracle checks every rule against the repository —
+      which it backs, which it contradicts, which nobody can verify.</div>
+  </div>
+  <div class="foot">
+    <div class="name">PROJECT <span>ORACLE</span> · zero dependencies</div>
+    <div class="cmd">pipx install project-oracle</div>
+  </div>
+</body>
+</html>
